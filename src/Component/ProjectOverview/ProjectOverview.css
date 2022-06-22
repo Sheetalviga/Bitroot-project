@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  /* float: left; */
+  width: 30%;
+  margin-top: 2%;
+  border-radius: 5px;
+  margin: 1.7%;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1600px) {
+  .column {
+    width: 40%;
+  }
+}
